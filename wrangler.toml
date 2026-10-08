@@ -1,0 +1,14 @@
+name = "api-cafe-queue"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cafe-queue-db"
+# GANTI: isi dengan database_id hasil `npx wrangler d1 create cafe-queue-db`
+database_id = "GANTI_DENGAN_DATABASE_ID"
+
+[vars]
+# GANTI: domain Cloudflare Pages kamu, pisahkan dengan koma kalau lebih dari satu.
+# Contoh: "https://kedai-kita.pages.dev,https://antrian.kedaikita.com"
+ALLOWED_ORIGIN = "*"
